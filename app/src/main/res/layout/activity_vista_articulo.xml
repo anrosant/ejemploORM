@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sublimastore.carpetas.Activities.vistaArticuloActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="311dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvTituloVer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGris"
+            android:padding="7dp"
+            android:text="@string/articulo"
+            android:textColor="@color/colorBlanco"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="@string/nombre"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <EditText
+            android:id="@+id/txtVerNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textSize="15sp"
+            tools:ignore="InvalidId,LabelFor,SmallSp,TextFields" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="@string/descripcion"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <EditText
+            android:id="@+id/txtVerDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textSize="15sp"
+            tools:ignore="InvalidId,LabelFor,SmallSp,TextFields" />
+
+        <TextView
+            android:id="@+id/tvTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="@string/tipo"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <Spinner
+            android:id="@+id/spVerTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipo">
+
+        </Spinner>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:text="@string/precio"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="121dp" />
+
+            <EditText
+                android:id="@+id/txtVerPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:textSize="15sp"
+                tools:ignore="DuplicateIds,InvalidId,LabelFor,SmallSp,TextFields" />
+
+            <TextView
+                android:id="@+id/tvCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:text="@string/cantidad"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="121dp" />
+
+            <EditText
+                android:id="@+id/txtVerCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:textSize="15sp"
+                tools:ignore="DuplicateIds,InvalidId,LabelFor,SmallSp,TextFields" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="12dp"
+        android:onClick="modificar"
+        android:text="Modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="borrar"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</android.support.constraint.ConstraintLayout>

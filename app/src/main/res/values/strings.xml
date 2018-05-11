@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SublimaStore</string>
+    <string name="nombre">Nombre</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="precio">Precio</string>
+    <string name="tituloNuevo">Nuevo artículo</string>
+    <string name="tituloActualizar">Actualizar artículo</string>
+    <string name="tituloLista">Lista de artículo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="tipo">Tipo</string>
+    <string name="acpetar">Aceptar</string>
+    <string name="continuar">Continuar</string>
+    <string name="nuevoArticulo">Nuevo artículo</string>
+    <string name="modificar">Modificar</string>
+    <string name="articulo">Artículo</string>
+    <string name="crear">Crear</string>
+    <string name="cargarImagen">Cargar Imagen</string>
+    <string-array name="tipo">
+        <item>Ropa</item>
+        <item>accesorio</item>
+        <item>Decoración</item>
+    </string-array>
+</resources>
